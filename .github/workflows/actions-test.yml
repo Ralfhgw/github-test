@@ -7,9 +7,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Branch Name
-        run: 
-          echo 'The name of this branch is' ${{github.ref_name}}
+      - name: main
+        run: | 
+          echo "ref: ${{ github.ref }}"
+          echo "ref_name: ${{ github.ref_name }}"
+          echo "event: ${{ github.event_name }}"
+          npm build
   deploy:
     needs: branch_name
     runs-on: ubuntu-latest
