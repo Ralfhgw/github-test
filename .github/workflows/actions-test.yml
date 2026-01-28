@@ -12,7 +12,7 @@ jobs:
           echo "ref: ${{ github.ref }}"
           echo "ref_name: ${{ github.ref_name }}"
           echo "event: ${{ github.event_name }}"
-          npm build
+          npm run build
   deploy:
     needs: branch_name
     runs-on: ubuntu-latest
