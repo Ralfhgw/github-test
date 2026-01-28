@@ -9,3 +9,9 @@ jobs:
       - name: Branch Name
         run: 
           echo 'The name of this branch is' ${{github.ref_name}}
+  deploy:
+    needs: branch_name
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploying to Prod
+        run: echo 'Deploying...'
