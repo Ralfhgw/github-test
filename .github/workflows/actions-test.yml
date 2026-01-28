@@ -15,7 +15,7 @@ jobs:
           echo "ref_name: ${{ github.ref_name }}"
           echo "event: ${{ github.event_name }}"
           npm run build
-          ls -la dist || echo "dist not found"
+          ls
   deploy:
     needs: branch_name
     runs-on: ubuntu-latest
