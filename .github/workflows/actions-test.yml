@@ -1,4 +1,4 @@
-name: Deploy main2
+name: Deploy main
 
 on:
   push:
