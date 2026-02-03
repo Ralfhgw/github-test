@@ -31,4 +31,4 @@ jobs:
           echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan -H code-collective.dci-web-dev.com >> ~/.ssh/known_hosts
-          rsync -avz --delete --no-times --no-perms ./dist/ deploy@code-collective.dci-web-dev.com:/var/www/code-collective.dci-web-dev.com
+          rsync -avz --delete --no-times --no-perms ./dist/ deploy@code-collective.dci-web-dev.com:/var/www/students/ralf
