@@ -10,6 +10,7 @@ export class UserService {
   }
 
   async getUser(id) {
-    return this.db.findById(id);
+    /* return this.db.findById(id); */
+    return null;
   }
 }
